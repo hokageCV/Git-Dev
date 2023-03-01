@@ -1,0 +1,54 @@
+:root {
+    --navBG: #440089;
+    --navText: #fbffff;
+    --mainBG: #c59bec;
+    --mainText: #fff9ff;
+    --btnBG: #7b27ca;
+}
+
+body {
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--baseBG);
+    color: var(--baseText);
+}
+
+nav {
+    background-color: var(--navBG);
+    padding: 1px;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav p {
+    font-size: 24px;
+    color: var(--navText);
+
+    margin: 1px;
+    padding: 4px;
+    height: 30px;
+}
+
+main {
+    font-size: 16px;
+    color: var(--mainText);
+    background-color: var(--mainBG);
+    padding: 10px 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#git-dev-btn {
+    background-color: var(--btnBG);
+    color: var(--mainText);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}

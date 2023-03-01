@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Github Dev",
+    "version": "0.0.1",
+    "description": "Open github.com in dev mode",
+    "icons": {
+        "16": "./assets/icon16.png",
+        "32": "./assets/icon32.png",
+        "48": "./assets/icon48.png",
+        "128": "./assets/icon128.png"
+    },
+    "permissions": ["activeTab", "tabs", "commands"],
+    "background": {
+        "service_worker": "./background/background.js"
+    },
+    "action": {
+        "default_popup": "./popup/popup.html",
+        "default_title": "Git Dev",
+        "default_icon": "./assets/icon48.png"
+    },
+    "commands": {
+        "open-git-dev": {
+            "suggested_key": { "default": "Ctrl+Shift+F", "mac": "MacCtrl+Shift+F" },
+            "description": "Open github.com in dev mode"
+        }
+    }
+}
